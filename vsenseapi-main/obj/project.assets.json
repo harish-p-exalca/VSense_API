@@ -7266,11 +7266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\VSense\\vsenseapi-main\\VSense.API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\VSense_API\\vsenseapi-main\\VSense.API.csproj",
       "projectName": "VSense.API",
-      "projectPath": "C:\\Users\\User\\VSense\\vsenseapi-main\\VSense.API.csproj",
+      "projectPath": "C:\\Users\\User\\VSense_API\\vsenseapi-main\\VSense.API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\VSense\\vsenseapi-main\\obj\\",
+      "outputPath": "C:\\Users\\User\\VSense_API\\vsenseapi-main\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

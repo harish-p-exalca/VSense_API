@@ -29,26 +29,34 @@ namespace VSense.API.Repositories
         }
         public async Task<MSite> CreateMSite(MSite mSite)
         {
-            var site = _dbcontext.MSites.FirstOrDefault(t => t.SiteID == mSite.SiteID);
-            if(site != null)
+            try
             {
-                site.Title = mSite.Title;
-                site.Geo = mSite.Geo;
-                site.Plant = mSite.Plant;
-                site.IsActive = mSite.IsActive;
-                site.ModifiedOn = DateTime.Now;
-                site.ModifiedBy = mSite.ModifiedBy;
-                await _dbcontext.SaveChangesAsync();
-                return site;
+                var site = _dbcontext.MSites.FirstOrDefault(t => t.SiteID == mSite.SiteID);
+                if (site != null)
+                {
+                    site.Title = mSite.Title;
+                    site.Geo = mSite.Geo;
+                    site.Plant = mSite.Plant;
+                    site.IsActive = mSite.IsActive;
+                    site.ModifiedOn = DateTime.Now;
+                    site.ModifiedBy = mSite.ModifiedBy;
+                    await _dbcontext.SaveChangesAsync();
+                    return site;
+                }
+                else
+                {
+                    site = mSite;
+                    site.IsActive = true;
+                    site.CreatedOn = DateTime.Now;
+                    site.CreatedBy = mSite.CreatedBy;
+                    var res = _dbcontext.MSites.Add(site);
+                    await _dbcontext.SaveChangesAsync();
+                    return res.Entity;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                site = mSite;
-                site.IsActive = true;
-                site.CreatedOn = DateTime.Now;
-                site.CreatedBy = mSite.CreatedBy;
-                var res=_dbcontext.MSites.Add(site);
-                return res.Entity;
+                throw ex;
             }
         }
         public async Task DeleteMSite(int ID)
@@ -85,27 +93,35 @@ namespace VSense.API.Repositories
         }
         public async Task<MSpace> CreateMSpace(MSpace mSpace)
         {
-            var space = _dbcontext.MSpaces.FirstOrDefault(t => t.SpaceID == mSpace.SpaceID);
-            if (space != null)
+            try
             {
-                space.Title = mSpace.Title;
-                space.WorkCenter = mSpace.WorkCenter;
-                space.ParantSpaceID = mSpace.ParantSpaceID;
-                space.SiteID = mSpace.SiteID;
-                space.IsActive = mSpace.IsActive;
-                space.ModifiedOn = DateTime.Now;
-                space.ModifiedBy = mSpace.ModifiedBy;
-                await _dbcontext.SaveChangesAsync();
-                return space;
+                var space = _dbcontext.MSpaces.FirstOrDefault(t => t.SpaceID == mSpace.SpaceID);
+                if (space != null)
+                {
+                    space.Title = mSpace.Title;
+                    space.WorkCenter = mSpace.WorkCenter;
+                    space.ParantSpaceID = mSpace.ParantSpaceID;
+                    space.SiteID = mSpace.SiteID;
+                    space.IsActive = mSpace.IsActive;
+                    space.ModifiedOn = DateTime.Now;
+                    space.ModifiedBy = mSpace.ModifiedBy;
+                    await _dbcontext.SaveChangesAsync();
+                    return space;
+                }
+                else
+                {
+                    space = mSpace;
+                    space.IsActive = true;
+                    space.CreatedOn = DateTime.Now;
+                    space.CreatedBy = mSpace.CreatedBy;
+                    var res = _dbcontext.MSpaces.Add(space);
+                    await _dbcontext.SaveChangesAsync();
+                    return res.Entity;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                space = mSpace;
-                space.IsActive = true;
-                space.CreatedOn = DateTime.Now;
-                space.CreatedBy = mSpace.CreatedBy;
-                var res = _dbcontext.MSpaces.Add(space);
-                return res.Entity;
+                throw ex;
             }
         }
         public async Task DeleteMSpace(int ID)
@@ -142,23 +158,31 @@ namespace VSense.API.Repositories
         }
         public async Task<MEdge> CreateMEdge(MEdge mEdge)
         {
-            var edge = _dbcontext.MEdges.FirstOrDefault(t => t.EdgeID == mEdge.EdgeID);
-            if (edge != null)
+            try
             {
-                edge.Title = mEdge.Title;
-                edge.IsActive = mEdge.IsActive;
-                edge.ModifiedOn = DateTime.Now;
-                edge.ModifiedBy = mEdge.ModifiedBy;
-                await _dbcontext.SaveChangesAsync();
-                return edge;
+                var edge = _dbcontext.MEdges.FirstOrDefault(t => t.EdgeID == mEdge.EdgeID);
+                if (edge != null)
+                {
+                    edge.Title = mEdge.Title;
+                    edge.IsActive = mEdge.IsActive;
+                    edge.ModifiedOn = DateTime.Now;
+                    edge.ModifiedBy = mEdge.ModifiedBy;
+                    await _dbcontext.SaveChangesAsync();
+                    return edge;
+                }
+                else
+                {
+                    edge = mEdge;
+                    edge.IsActive = true;
+                    edge.CreatedOn = DateTime.Now;
+                    var res = _dbcontext.MEdges.Add(edge);
+                    await _dbcontext.SaveChangesAsync();
+                    return res.Entity;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                edge = mEdge;
-                edge.IsActive = true;
-                edge.CreatedOn = DateTime.Now;
-                var res = _dbcontext.MEdges.Add(edge);
-                return res.Entity;
+                throw ex;
             }
         }
         public async Task DeleteMEdge(int ID)
