@@ -1,0 +1,534 @@
+22-03-2021 11.52.50 AM : CarbonFootprint/GetAllCurrentDevices :- Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15099; handshake=22; 
+22-03-2021 11.56.39 AM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 12.07.12 PM : CarbonFootprint/GetAllCurrentDevices :- The LINQ expression '(GroupByShaperExpression:
+KeySelector: (c.DeviceID), 
+ElementSelector:(EntityShaperExpression: 
+    EntityType: CurrentConsumption Keyless
+    ValueBufferExpression: 
+        (ProjectionBindingExpression: EmptyProjectionMember)
+    IsNullable: False
+)
+)
+    .FirstOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.19 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.20 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.23 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.28 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.34 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.38 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.44 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.48 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.54 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.32.59 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.04 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.09 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.14 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.19 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.24 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.29 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.34 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.39 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.44 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.49 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.54 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.33.59 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.04 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.09 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.14 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.19 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.24 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.29 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.34 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.39 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.44 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.49 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.34.54 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.22 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.22 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.22 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.22 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.32 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.42 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.47 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.52 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.35.57 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.02 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.07 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.12 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.17 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.22 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.27 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.32 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.42 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.47 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.52 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.36.57 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.02 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.07 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.12 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.17 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.22 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.27 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.32 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.42 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.37.47 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.38.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.39.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.40.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.41.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.42.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.43.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.44.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.45.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.46.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.47.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.48.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.49.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.50.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.51.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.52.37 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.53.07 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.24 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.29 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.34 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.39 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.45 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.49 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 12.59.55 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 1.00.04 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 1.00.10 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 1.00.15 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 1.00.20 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 1.00.25 PM : CarbonFootprint/GetCurrentConsumption :- The LINQ expression 'DbSet<CurrentConsumption>
+    .Where(c => c.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 1.58.07 PM : CarbonFootprint/GetCurrentConsumption :- An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
+22-03-2021 1.58.42 PM : CarbonFootprint/GetCurrentConsumption :- Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+22-03-2021 1.58.48 PM : CarbonFootprint/GetCurrentConsumption :- Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+22-03-2021 1.58.55 PM : CarbonFootprint/GetCurrentConsumption :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 1.59.09 PM : CarbonFootprint/GetAllCurrentDevices :- Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+22-03-2021 1.59.10 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 2.00.19 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 2.00.46 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 2.02.17 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 2.03.05 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 3.13.42 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 3.13.43 PM : CarbonFootprint/GetAllCurrentDevices :- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+22-03-2021 3.19.49 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.19.53 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.19.58 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.04 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.08 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.14 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.16 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.21 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.26 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.31 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.36 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.41 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.47 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.51 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.20.56 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.01 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.07 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.11 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.16 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.22 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.26 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.31 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.37 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.42 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.46 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.52 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.21.57 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.02 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.06 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.12 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.17 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.21 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.27 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.31 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.36 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.41 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.46 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.52 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.22.57 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.02 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.07 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.12 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.17 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.22 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.27 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.31 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.36 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.41 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.47 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.51 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.23.57 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.02 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.06 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.09 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.14 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.19 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.21 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.26 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.32 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.37 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.41 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.46 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.52 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.24.57 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.02 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.07 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.12 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.17 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.23 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.28 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.33 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.38 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.43 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.48 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.53 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.25.57 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+22-03-2021 3.27.03 PM : CarbonFootprint/GetWaterConsumption :- The LINQ expression 'DbSet<WaterConsumption>
+    .Where(w => w.DeviceId == __DeviceID_0)
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.

@@ -1,0 +1,6 @@
+23-03-2021 3.51.06 PM : CarbonFootprint/GetEnergyConsumption :- Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+23-03-2021 3.52.15 PM : CarbonFootprint/GetEnergyConsumption :- Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+23-03-2021 3.53.12 PM : CarbonFootprint/GetEnergyConsumption :- Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+23-03-2021 3.53.15 PM : CarbonFootprint/GetEnergyConsumption :- Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+23-03-2021 3.53.16 PM : CarbonFootprint/GetEnergyConsumption :- Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+23-03-2021 3.53.17 PM : CarbonFootprint/GetEnergyConsumption :- Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')

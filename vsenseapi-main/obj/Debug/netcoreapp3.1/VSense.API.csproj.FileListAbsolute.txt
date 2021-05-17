@@ -1,0 +1,231 @@
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.exe
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.deps.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.dev.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.csprojAssemblyReference.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfoInputs.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfo.cs
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.csproj.CoreCompileInputs.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.RazorTargetAssemblyInfo.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.csproj.CopyComplete
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.Manifest.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.xml
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.genruntimeconfig.cache
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploy\web.config
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploy\appsettings.Development.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploy\appsettings.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploy\VSense.API.deps.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploy\VSense.API.runtimeconfig.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\Vsenseapideploy\web.config
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\web.config
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\appsettings.Development.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\appsettings.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\VSense.API.deps.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\VSense.API.runtimeconfig.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\Vsenseapideploy\appsettings.Development.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\Vsenseapideploy\appsettings.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\Vsenseapideploy\VSense.API.deps.json
+C:\Users\Harish\FSC Nxt_Database\Services\VSense.API\bin\Debug\netcoreapp3.1\Vsenseapideploylocal\Vsenseapideploy\VSense.API.runtimeconfig.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.exe
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.deps.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.dev.json
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Harish\VSense.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.csprojAssemblyReference.cache
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfoInputs.cache
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfo.cs
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.csproj.CoreCompileInputs.cache
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.RazorTargetAssemblyInfo.cache
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.csproj.CopyComplete
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.Manifest.cache
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.xml
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\Harish\VSense.API\obj\Debug\netcoreapp3.1\VSense.API.genruntimeconfig.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.exe
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.deps.json
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.json
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.dev.json
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.csprojAssemblyReference.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfoInputs.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfo.cs
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.csproj.CoreCompileInputs.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.RazorTargetAssemblyInfo.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.csproj.CopyComplete
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.Manifest.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.xml
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.genruntimeconfig.cache
+C:\Users\iadmin\Desktop\vsenseapi-main\obj\Debug\netcoreapp3.1\scopedcss\bundle\VSense.API.styles.css
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.exe
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.deps.json
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.json
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.runtimeconfig.dev.json
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\User\VSense\vsenseapi-main\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.csprojAssemblyReference.cache
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfoInputs.cache
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.AssemblyInfo.cs
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.csproj.CoreCompileInputs.cache
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.Manifest.cache
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\staticwebassets\VSense.API.StaticWebAssets.xml
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\scopedcss\bundle\VSense.API.styles.css
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.RazorTargetAssemblyInfo.cache
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.csproj.CopyComplete
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.dll
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.pdb
+C:\Users\User\VSense\vsenseapi-main\obj\Debug\netcoreapp3.1\VSense.API.genruntimeconfig.cache
