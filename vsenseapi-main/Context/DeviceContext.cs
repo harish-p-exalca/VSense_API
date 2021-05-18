@@ -13,7 +13,7 @@ namespace VSense.API.Context
         public DbSet<MSite> MSites { get; set; }
         public DbSet<MSpace> MSpaces { get; set; }
         public DbSet<MAsset> MAssets { get; set; }
-        public DbSet<MGroup> MGroups { get; set; }
+        public DbSet<MEdgeGroup> MEdgeGroups { get; set; }
         public DbSet<MEdgeGroupParam> MEdgeGroupParams { get; set; }
         public DbSet<MEdge> MEdges { get; set; }
         public DbSet<MEdgeAssign> MEdgeAssigns { get; set; }

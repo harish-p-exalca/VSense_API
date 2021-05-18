@@ -45,7 +45,7 @@ namespace VSense.API.Models
         public int SpaceID { get; set; }
     }
     [Table("M_Group")]
-    public class MGroup : CommonClass
+    public class MEdgeGroup : CommonClass
     {
         [Key]
         public int EdgeGroup { get; set; }
@@ -109,6 +109,9 @@ namespace VSense.API.Models
         public double? Hard1ExceptionThreshold { get; set; }
         public double? Hard2ExceptionThreshold { get; set; }
         public string ActivityGraphTitle { get; set; }
+    }
+    public class MEdgeGroupView:MEdgeGroup {
+        public List<MEdgeGroupParam> EdgeParams { get; set; }
     }
     #endregion
     #region Rule

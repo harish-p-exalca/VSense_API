@@ -170,6 +170,56 @@ namespace VSense.API.Controllers
                 return null;
             }
         }
+        [HttpPost]
+        public async Task<IActionResult> CreateMEdgeGroup(MEdgeGroupView groupView)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var result = await _repository.CreateMEdgeGroup(groupView);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/CreateMEdgeGroup", ex);
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteMEdgeGroup(int ID)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _repository.DeleteMEdgeGroup(ID);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/DeleteMEdgeGroup", ex);
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet]
+        public List<MEdgeGroupView> GetMEdgeGroups()
+        {
+            try
+            {
+                var Result = _repository.GetMEdgeGroups();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetMEdgeGroups", ex);
+                return null;
+            }
+        }
         #endregion
     }
 }
