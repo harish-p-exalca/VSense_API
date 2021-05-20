@@ -307,7 +307,13 @@ namespace VSense.API.Repositories
                 foreach (var group in groups)
                 {
                     var groupView = new MEdgeGroupView();
-                    groupView = (MEdgeGroupView)group;
+                    groupView.EdgeGroup = group.EdgeGroup;
+                    groupView.Title = group.Title;
+                    groupView.IsActive = group.IsActive;
+                    groupView.CreatedBy = group.CreatedBy;
+                    groupView.CreatedOn = group.CreatedOn;
+                    groupView.ModifiedBy = group.ModifiedBy;
+                    groupView.ModifiedOn = group.ModifiedOn;
                     groupView.EdgeParams = _dbContext.MEdgeGroupParams.Where(t => t.EdgeGroup == group.EdgeGroup).ToList();
                     Result.Add(groupView);
                 }
@@ -343,7 +349,7 @@ namespace VSense.API.Repositories
                     }
                     else
                     {
-                        asset = (AssetView)assetView;
+                        asset = (MAsset)assetView;
                         asset.IsActive = true;
                         asset.CreatedOn = DateTime.Now;
                         var res = _dbContext.MAssets.Add(asset);
