@@ -220,6 +220,42 @@ namespace VSense.API.Controllers
                 return null;
             }
         }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteMAsset(int ID)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _repository.DeleteMAsset(ID);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/DeleteMAsset", ex);
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateMAsset(AssetView assetView)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var result = await _repository.CreateMAsset(assetView);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/CreateMAsset", ex);
+                return BadRequest(ex.Message);
+            }
+        }
         #endregion
     }
 }

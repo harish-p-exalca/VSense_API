@@ -21,6 +21,8 @@ namespace VSense.API.Repositories
         Task<MEdgeGroup> CreateMEdgeGroup(MEdgeGroupView GroupView);
         Task DeleteMEdgeGroup(int ID);
         List<MEdgeGroupView> GetMEdgeGroups();
+        Task<MAsset> CreateMAsset(AssetView assetView);
+        Task DeleteMAsset(int ID);
         #endregion
     }
 }

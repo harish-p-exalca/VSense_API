@@ -182,6 +182,7 @@ namespace VSense.API.Repositories
                 else
                 {
                     edge = mEdge;
+                    edge.Status = "20";
                     edge.IsActive = true;
                     edge.CreatedOn = DateTime.Now;
                     var res = _dbContext.MEdges.Add(edge);
@@ -243,7 +244,7 @@ namespace VSense.API.Repositories
                         group.CreatedOn = DateTime.Now;
                         var res = _dbContext.MEdgeGroups.Add(group);
                         await _dbContext.SaveChangesAsync();
-                        await CreateMEdgeGroupParams(GroupView.EdgeParams, GroupView.EdgeGroup);
+                        await CreateMEdgeGroupParams(GroupView.EdgeParams, res.Entity.EdgeGroup);
                         Result = res.Entity;
                     }
                     transaction.Commit();
@@ -311,6 +312,132 @@ namespace VSense.API.Repositories
                     Result.Add(groupView);
                 }
                 return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task<MAsset> CreateMAsset(AssetView assetView)
+        {
+            var Result = new MAsset();
+            var strategy = _dbContext.Database.CreateExecutionStrategy();
+            await strategy.ExecuteAsync(async () =>
+            {
+                using var transaction = _dbContext.Database.BeginTransaction();
+                try
+                {
+                    MAsset asset = _dbContext.MAssets.FirstOrDefault(t => t.AssetID == assetView.AssetID);
+                    if (asset != null)
+                    {
+                        asset.Title = assetView.Title;
+                        asset.Class = assetView.Class;
+                        asset.SpaceID = assetView.SpaceID;
+                        asset.IsActive = assetView.IsActive;
+                        asset.ModifiedOn = DateTime.Now;
+                        asset.ModifiedBy = assetView.ModifiedBy;
+                        await _dbContext.SaveChangesAsync();
+                        await RemoveAssignment(assetView.AssetID);
+                        await CreateAssignments(assetView.Assignments, assetView.AssetID);
+                        Result = asset;
+                    }
+                    else
+                    {
+                        asset = (AssetView)assetView;
+                        asset.IsActive = true;
+                        asset.CreatedOn = DateTime.Now;
+                        var res = _dbContext.MAssets.Add(asset);
+                        await _dbContext.SaveChangesAsync();
+                        await CreateAssignments(assetView.Assignments, res.Entity.AssetID);
+                        Result = res.Entity;
+                    }
+                    transaction.Commit();
+                    transaction.Dispose();
+                    return Result;
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    transaction.Dispose();
+                    throw ex;
+                }
+            });
+            return Result;
+        }
+        public async Task CreateAssignments(List<Assignment> assignments, int AssetID)
+        {
+            try
+            {
+                foreach (var assign in assignments)
+                {
+                    assign.AssetID = AssetID;
+                    assign.EndDateTime = new DateTime(9999,12,31);
+                    assign.IsActive = true;
+                    assign.CreatedOn = DateTime.Now;
+                    var res=_dbContext.MEdgeAssigns.Add(assign);
+                    var edge = _dbContext.MEdges.FirstOrDefault(t => t.EdgeID == assign.EdgeID);
+                    edge.Status = "10";
+                    await CreateAssignParams(assign.AssignParams, res.Entity.AssignmentID);
+                }
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task CreateAssignParams(List<MEdgeAssignParam> assignParams, int AssignmentID)
+        {
+            try
+            {
+                foreach (var assignParam in assignParams)
+                {
+                    assignParam.AssignmentID = AssignmentID;
+                    assignParam.IsActive = true;
+                    assignParam.CreatedOn = DateTime.Now;
+                    _dbContext.MEdgeAssignParams.Add(assignParam);
+                }
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task RemoveAssignment(int AssetID)
+        {
+            try
+            {
+                var assignments = _dbContext.MEdgeAssigns.Where(t => t.AssignmentID == AssetID);
+                foreach (var assign in assignments)
+                {
+                    var edge = _dbContext.MEdges.FirstOrDefault(t => t.EdgeID == assign.EdgeID);
+                    edge.Status = "20";
+                    _dbContext.MEdgeAssigns.Remove(assign);
+                    _dbContext.MEdgeAssignParams.Where(x => x.AssignmentID == AssetID).ToList().ForEach(x => _dbContext.MEdgeAssignParams.Remove(x));
+                }
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task DeleteMAsset(int ID)
+        {
+            try
+            {
+                var asset = _dbContext.MAssets.FirstOrDefault(t => t.AssetID == ID);
+                if (asset != null)
+                {
+                    _dbContext.MAssets.Remove(asset);
+                    await _dbContext.SaveChangesAsync();
+                    await RemoveAssignment(ID);
+                }
+                else
+                {
+                    throw new Exception("asset not found");
+                }
             }
             catch (Exception ex)
             {
