@@ -113,6 +113,14 @@ namespace VSense.API.Models
     public class MEdgeGroupView:MEdgeGroup {
         public List<MEdgeGroupParam> EdgeParams { get; set; }
     }
+    public class AssetView : MAsset
+    {
+        public List<Assignment> Assignments { get; set; }
+    }
+    public class Assignment:MEdgeAssign
+    {
+        public List<MEdgeAssignParam> AssignParams { get; set; }
+    }
     #endregion
     #region Rule
     [Table("Rule")]
