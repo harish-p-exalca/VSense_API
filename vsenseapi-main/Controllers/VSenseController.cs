@@ -170,6 +170,20 @@ namespace VSense.API.Controllers
                 return null;
             }
         }
+        [HttpGet]
+        public List<MEdge> GetOpenMEdges()
+        {
+            try
+            {
+                var Result = _repository.GetOpenMEdges();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetOpenMEdges", ex);
+                return null;
+            }
+        }
         [HttpPost]
         public async Task<IActionResult> CreateMEdgeGroup(MEdgeGroupView groupView)
         {
@@ -220,6 +234,20 @@ namespace VSense.API.Controllers
                 return null;
             }
         }
+        [HttpGet]
+        public List<AssetView> GetMAssets()
+        {
+            try
+            {
+                var Result = _repository.GetMAssets();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetMAssets", ex);
+                return null;
+            }
+        }
         [HttpDelete]
         public async Task<IActionResult> DeleteMAsset(int ID)
         {
@@ -254,6 +282,56 @@ namespace VSense.API.Controllers
             {
                 ErrorLog.WriteToFile("Master/CreateMAsset", ex);
                 return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateRule(Rule rule)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var result = await _repository.CreateRule(rule);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/CreateRule", ex);
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteRule(int ID)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _repository.DeleteRule(ID);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/DeleteRule", ex);
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet]
+        public List<Rule> GetRules()
+        {
+            try
+            {
+                var Result = _repository.GetRules();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetRules", ex);
+                return null;
             }
         }
         #endregion

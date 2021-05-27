@@ -43,6 +43,7 @@ namespace VSense.API.Models
         public string Title { get; set; }
         public string Class { get; set; }
         public int SpaceID { get; set; }
+        public string Status { get; set; }
     }
     [Table("M_Group")]
     public class MEdgeGroup : CommonClass

@@ -16,6 +16,7 @@ namespace VSense.API.Repositories
         Task<MSpace> CreateMSpace(MSpace mSpace);
         Task DeleteMSpace(int ID);
         List<MEdge> GetMEdges();
+        List<MEdge> GetOpenMEdges();
         Task<MEdge> CreateMEdge(MEdge mSpace);
         Task DeleteMEdge(int ID);
         Task<MEdgeGroup> CreateMEdgeGroup(MEdgeGroupView GroupView);
@@ -23,6 +24,14 @@ namespace VSense.API.Repositories
         List<MEdgeGroupView> GetMEdgeGroups();
         Task<MAsset> CreateMAsset(AssetView assetView);
         Task DeleteMAsset(int ID);
+        List<AssetView> GetMAssets();
+        List<Rule> GetRules();
+        Task<Rule> CreateRule(Rule ruleView);
+        Task DeleteRule(int ID);
+        #endregion
+        #region Log and Exception
+        List<EdgeException> GetAllExceptions();
+        Task<EdgeLog> CreateEdgeLog(EdgeLog Log);
         #endregion
     }
 }
