@@ -157,6 +157,18 @@ namespace VSense.API.Repositories
                 throw ex;
             }
         }
+        public List<MEdge> GetOpenMEdges()
+        {
+            try
+            {
+                var Result = _dbContext.MEdges.Where(t=>t.Status=="20").ToList();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public async Task<MEdge> CreateMEdge(MEdge mEdge)
         {
             try
@@ -339,6 +351,7 @@ namespace VSense.API.Repositories
                         asset.Title = assetView.Title;
                         asset.Class = assetView.Class;
                         asset.SpaceID = assetView.SpaceID;
+                        asset.Status = assetView.Status;
                         asset.IsActive = assetView.IsActive;
                         asset.ModifiedOn = DateTime.Now;
                         asset.ModifiedBy = assetView.ModifiedBy;
@@ -376,16 +389,17 @@ namespace VSense.API.Repositories
             {
                 foreach (var assign in assignments)
                 {
+                    assign.AssignmentID = default;
                     assign.AssetID = AssetID;
                     assign.EndDateTime = new DateTime(9999,12,31);
                     assign.IsActive = true;
                     assign.CreatedOn = DateTime.Now;
                     var res=_dbContext.MEdgeAssigns.Add(assign);
                     var edge = _dbContext.MEdges.FirstOrDefault(t => t.EdgeID == assign.EdgeID);
+                    await _dbContext.SaveChangesAsync();
                     edge.Status = "10";
                     await CreateAssignParams(assign.AssignParams, res.Entity.AssignmentID);
                 }
-                await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -414,15 +428,15 @@ namespace VSense.API.Repositories
         {
             try
             {
-                var assignments = _dbContext.MEdgeAssigns.Where(t => t.AssignmentID == AssetID);
+                var assignments = _dbContext.MEdgeAssigns.Where(t => t.AssetID == AssetID).ToList();
                 foreach (var assign in assignments)
                 {
                     var edge = _dbContext.MEdges.FirstOrDefault(t => t.EdgeID == assign.EdgeID);
                     edge.Status = "20";
                     _dbContext.MEdgeAssigns.Remove(assign);
-                    _dbContext.MEdgeAssignParams.Where(x => x.AssignmentID == AssetID).ToList().ForEach(x => _dbContext.MEdgeAssignParams.Remove(x));
+                    _dbContext.MEdgeAssignParams.Where(x => x.AssignmentID == assign.AssignmentID).ToList().ForEach(x => _dbContext.MEdgeAssignParams.Remove(x));
+                    await _dbContext.SaveChangesAsync();
                 }
-                await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -444,6 +458,168 @@ namespace VSense.API.Repositories
                 {
                     throw new Exception("asset not found");
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<AssetView> GetMAssets()
+        {
+            try
+            {
+                var Result = new List<AssetView>();
+                var assets = _dbContext.MAssets.ToList();
+                foreach (var asset in assets)
+                {
+                    var view = new AssetView();
+                    view.AssetID = asset.AssetID;
+                    view.Title = asset.Title;
+                    view.Class = asset.Class;
+                    view.SpaceID = asset.SpaceID;
+                    view.Status = asset.Status;
+                    view.IsActive = asset.IsActive;
+                    view.CreatedOn = asset.CreatedOn;
+                    view.CreatedBy = asset.CreatedBy;
+                    view.ModifiedOn = asset.ModifiedOn;
+                    view.ModifiedBy = asset.ModifiedBy;
+                    view.Assignments = GetAssignments(asset.AssetID);
+                    Result.Add(view);
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Assignment> GetAssignments(int AssetID)
+        {
+            try
+            {
+                var Result = new List<Assignment>();
+                var assignments = _dbContext.MEdgeAssigns.Where(t => t.AssetID == AssetID).ToList();
+                foreach (var assignment in assignments)
+                {
+                    var view = new Assignment();
+                    view.AssignmentID = assignment.AssignmentID;
+                    view.EdgeID = assignment.EdgeID;
+                    view.AssetID = assignment.AssetID;
+                    view.SpaceID = assignment.SpaceID;
+                    view.SiteID = assignment.SiteID;
+                    view.StartDateTime = assignment.StartDateTime;
+                    view.EndDateTime = assignment.EndDateTime;
+                    view.Frequency = assignment.Frequency;
+                    view.IsActive = assignment.IsActive;
+                    view.ModifiedOn = assignment.ModifiedOn;
+                    view.ModifiedBy = assignment.ModifiedBy;
+                    view.CreatedOn = assignment.CreatedOn;
+                    view.CreatedBy = assignment.CreatedBy;
+                    view.AssignParams = _dbContext.MEdgeAssignParams.Where(t => t.AssignmentID == assignment.AssignmentID).ToList();
+                    Result.Add(view);
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<Rule> GetRules()
+        {
+            try
+            {
+                var Result = _dbContext.Rules.ToList();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task<Rule> CreateRule(Rule ruleView)
+        {
+            try
+            {
+                var rule = _dbContext.Rules.FirstOrDefault(t => t.RuleID == ruleView.RuleID);
+                if (rule != null)
+                {
+                    rule.SiteID = ruleView.SiteID;
+                    rule.SpaceID = ruleView.SpaceID;
+                    rule.AssetID = ruleView.AssetID;
+                    rule.Threshold = ruleView.Threshold;
+                    rule.SLA = ruleView.SLA;
+                    rule.Level1 = ruleView.Level1;
+                    rule.Level2 = ruleView.Level2;
+                    rule.Level3 = ruleView.Level3;
+                    rule.Notif1 = ruleView.Notif1;
+                    rule.Notif2 = ruleView.Notif2;
+                    rule.EmailTemplate = ruleView.EmailTemplate;
+                    rule.IsActive = ruleView.IsActive;
+                    rule.ModifiedOn = DateTime.Now;
+                    rule.ModifiedBy = ruleView.ModifiedBy;
+                    await _dbContext.SaveChangesAsync();
+                    return rule;
+                }
+                else
+                {
+                    rule = ruleView;
+                    rule.IsActive = true;
+                    rule.CreatedOn = DateTime.Now;
+                    rule.CreatedBy = ruleView.CreatedBy;
+                    var res = _dbContext.Rules.Add(rule);
+                    await _dbContext.SaveChangesAsync();
+                    return res.Entity;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task DeleteRule(int ID)
+        {
+            try
+            {
+                var rule = _dbContext.Rules.FirstOrDefault(t => t.RuleID == ID);
+                if (rule != null)
+                {
+                    _dbContext.Rules.Remove(rule);
+                    await _dbContext.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception("rule not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+        #region Log and Exception
+        public List<EdgeException> GetAllExceptions()
+        {
+            try
+            {
+                var res = _dbContext.EdgeExceptions.ToList();
+                return res;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task<EdgeLog> CreateEdgeLog(EdgeLog Log)
+        {
+            try
+            {
+                Log.IsActive = true;
+                Log.CreatedOn = DateTime.Now;
+                var res = _dbContext.EdgeLogs.Add(Log);
+                await _dbContext.SaveChangesAsync();
+                return res.Entity;
             }
             catch (Exception ex)
             {
