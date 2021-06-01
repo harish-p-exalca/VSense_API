@@ -161,7 +161,7 @@ namespace VSense.API.Repositories
         {
             try
             {
-                var Result = _dbContext.MEdges.Where(t=>t.Status=="20").ToList();
+                var Result = _dbContext.MEdges.Where(t=>t.Status=="20" && t.ParantEdgeID!=null).ToList();
                 return Result;
             }
             catch (Exception ex)
@@ -625,6 +625,68 @@ namespace VSense.API.Repositories
             {
                 throw ex;
             }
+        }
+        #endregion
+        #region Monitor
+        public List<MonitorTableView> GetMonitorTable()
+        {
+            try
+            {
+                var Result = new List<MonitorTableView>();
+                var assignments = _dbContext.MEdgeAssigns.ToList();
+                foreach (var assign in assignments)
+                {
+                    var res = new MonitorTableView();
+                    res.Asset = _dbContext.MAssets.Find(assign.AssetID).Title;
+                    res.Edge = _dbContext.MEdges.Find(assign.EdgeID).Title;
+                    res.EdgeID = assign.EdgeID;
+                    res.Site= _dbContext.MSites.Find(assign.SiteID).Title;
+                    res.Space= _dbContext.MSpaces.Find(assign.SpaceID).Title;
+                    res.Status= _dbContext.MEdges.Find(assign.EdgeID).IsActive;
+                    res.LastFeed = _dbContext.EdgeLogs.OrderByDescending(t => t.LogID).FirstOrDefault(t => t.EdgeID == assign.EdgeID)?.DateTime;
+                    Result.Add(res);
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task ToggleDeviceStatus(int EdgeID)
+        {
+            try
+            {
+                var Edge = _dbContext.MEdges.Find(EdgeID);
+                Edge.IsActive = !Edge.IsActive;
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<EdgeStatusChartData> GetEdgeStatusChartData()
+        {
+            try
+            {
+                var Logs= _dbContext.EdgeLogs.ToLookup(t => t.DateTime.Date);
+                var Result = new List<EdgeStatusChartData>();
+                foreach (var log in Logs)
+                {
+                    var EdgeAndDate = log.ToLookup(t => t.EdgeID);
+                    var chartData = new EdgeStatusChartData();
+                    chartData.x = log.Key;
+                    chartData.y = EdgeAndDate.Count;
+                    Result.Add(chartData);
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
         #endregion
     }

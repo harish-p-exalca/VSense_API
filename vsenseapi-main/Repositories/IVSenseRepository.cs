@@ -33,5 +33,10 @@ namespace VSense.API.Repositories
         List<EdgeException> GetAllExceptions();
         Task<EdgeLog> CreateEdgeLog(EdgeLog Log);
         #endregion
+        #region Monitor
+        List<MonitorTableView> GetMonitorTable();
+        Task ToggleDeviceStatus(int EdgeID);
+        List<EdgeStatusChartData> GetEdgeStatusChartData();
+        #endregion
     }
 }
