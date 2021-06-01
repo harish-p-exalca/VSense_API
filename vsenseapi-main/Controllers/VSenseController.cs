@@ -335,5 +335,49 @@ namespace VSense.API.Controllers
             }
         }
         #endregion
+        #region Monitor
+        [HttpGet]
+        public List<MonitorTableView> GetMonitorTable()
+        {
+            try
+            {
+                var Result = _repository.GetMonitorTable();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetMonitorTable", ex);
+                return null;
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> ToggleDeviceStatus(int EdgeID)
+        {
+            try
+            {
+                await _repository.ToggleDeviceStatus(EdgeID);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/ToggleDeviceStatus", ex);
+                return null;
+            }
+        }
+        [HttpGet]
+        public List<EdgeStatusChartData> GetEdgeStatusChartData()
+        {
+            try
+            {
+                var Result = _repository.GetEdgeStatusChartData();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetEdgeStatusChartData", ex);
+                return null;
+            }
+        }
+        #endregion
     }
 }

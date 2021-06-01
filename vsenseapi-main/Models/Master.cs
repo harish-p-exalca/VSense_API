@@ -181,4 +181,21 @@ namespace VSense.API.Models
         public string CAPAAttachment { get; set; }
     }
     #endregion
+    #region Monitor
+    public class MonitorTableView
+    {
+        public string Site { get; set; }
+        public string Space { get; set; }
+        public string Asset { get; set; }
+        public string Edge { get; set; }
+        public int EdgeID { get; set; }
+        public bool Status { get; set; }
+        public DateTime? LastFeed { get; set; }
+    }
+    public class EdgeStatusChartData
+    {
+        public DateTime x { get; set; }
+        public int y { get; set; }
+    }
+    #endregion
 }
