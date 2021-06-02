@@ -163,7 +163,7 @@ namespace VSense.API.Models
     {
         [Key]
         public int ExcepID { get; set; }
-        public int DeviceID { get; set; }
+        public int EdgeID { get; set; }
         public string PramID { get; set; }
         public double Value { get; set; }
         public double Threshold { get; set; }
@@ -179,6 +179,53 @@ namespace VSense.API.Models
         public string RCAAttchment { get; set; }
         public string CAPAText { get; set; }
         public string CAPAAttachment { get; set; }
+    }
+    public class AssignParamLogView
+    {
+        public string PramID { get; set; }
+        public string Title { get; set; }
+        public string ActivityGraphTitle { get; set; }
+        public double? Min { get; set; }
+        public double? Max { get; set; }
+        public string Unit { get; set; }
+        public double Value { get; set; }
+        public double MinValue { get; set; }
+        public double MaxValue { get; set; }
+        public double AvgValue { get; set; }
+        public DateTime DateTime { get; set; }
+        public bool IsLogExist { get; set; }
+    }
+    public class LiveFeedView
+    {
+        public string Site { get; set; }
+        public string Space { get; set; }
+        public string Asset { get; set; }
+        public string PramTitle { get; set; }
+        public int LogID { get; set; }
+        public int EdgeID { get; set; }
+        public string RefID { get; set; }
+        public DateTime DateTime { get; set; }
+        public string PramID { get; set; }
+        public double Value { get; set; }
+        public double MinValue { get; set; }
+        public double MaxValue { get; set; }
+        public double AvgValue { get; set; }
+        public double Threshold { get; set; }
+    }
+    public class ExceptionView
+    {
+        public int ExcepID { get; set; }
+        public string Site { get; set; }
+        public string Space { get; set; }
+        public string Asset { get; set; }
+        public string Class { get; set; }
+        public string PramID { get; set; }
+        public double Value { get; set; }
+        public DateTime DateTime { get; set; }
+        public double Threshold { get; set; }
+        public string AssignedTo { get; set; }
+        public DateTime SLAStart { get; set; }
+        public string Status { get; set; }
     }
     #endregion
     #region Monitor
@@ -196,6 +243,16 @@ namespace VSense.API.Models
     {
         public DateTime x { get; set; }
         public int y { get; set; }
+    }
+    public class ControlCenterFeed
+    {
+        public string Site { get; set; }
+        public string Space { get; set; }
+        public string Asset { get; set; }
+        public string Title { get; set; }
+        public double? Value { get; set; }
+        public bool Status { get; set; }
+        public DateTime? LastFeed { get; set; }
     }
     #endregion
 }

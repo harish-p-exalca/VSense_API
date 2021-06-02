@@ -171,6 +171,20 @@ namespace VSense.API.Controllers
             }
         }
         [HttpGet]
+        public MEdge GetMEdge(int EdgeID)
+        {
+            try
+            {
+                var Result = _repository.GetMEdge(EdgeID);
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Master/GetMEdge", ex);
+                return null;
+            }
+        }
+        [HttpGet]
         public List<MEdge> GetOpenMEdges()
         {
             try
@@ -346,7 +360,21 @@ namespace VSense.API.Controllers
             }
             catch (Exception ex)
             {
-                ErrorLog.WriteToFile("Master/GetMonitorTable", ex);
+                ErrorLog.WriteToFile("Monitor/GetMonitorTable", ex);
+                return null;
+            }
+        }
+        [HttpGet]
+        public List<ControlCenterFeed> GetControlCenterFeed()
+        {
+            try
+            {
+                var Result = _repository.GetControlCenterFeed();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Monitor/GetControlCenterFeed", ex);
                 return null;
             }
         }
@@ -360,7 +388,7 @@ namespace VSense.API.Controllers
             }
             catch (Exception ex)
             {
-                ErrorLog.WriteToFile("Master/ToggleDeviceStatus", ex);
+                ErrorLog.WriteToFile("Monitor/ToggleDeviceStatus", ex);
                 return null;
             }
         }
@@ -374,7 +402,68 @@ namespace VSense.API.Controllers
             }
             catch (Exception ex)
             {
-                ErrorLog.WriteToFile("Master/GetEdgeStatusChartData", ex);
+                ErrorLog.WriteToFile("Monitor/GetEdgeStatusChartData", ex);
+                return null;
+            }
+        }
+        #endregion
+        #region Log and Exception
+        [HttpGet]
+        public List<AssignParamLogView> GetLastLogOfParams(int EdgeID)
+        {
+            try
+            {
+                var Result = _repository.GetLastLogOfParams(EdgeID);
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("EdgeLog/GetLastLogOfParams", ex);
+                return null;
+            }
+        }
+        public async Task<IActionResult> CreateEdgeLog(EdgeLog log)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var result = await _repository.CreateEdgeLog(log);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("EdgeLog/CreateEdgeLog", ex);
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet]
+        public List<LiveFeedView> GetLivFeeds()
+        {
+            try
+            {
+                var Result = _repository.GetLivFeeds();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Exceptions/GetLivFeeds", ex);
+                return null;
+            }
+        }
+        [HttpGet]
+        public List<ExceptionView> GetExceptions()
+        {
+            try
+            {
+                var Result = _repository.GetExceptions();
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteToFile("Exceptions/GetExceptions", ex);
                 return null;
             }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1J7gwf6FMemgP594a1PuA6hbyZ+KDJ1wpxvYvdRqrkE1Dwdnm3Z4DUE+IxllxcOgMFJiEGuzTklrbwntAlLdJg==",
+  "dgSpecHash": "afOrM0Py5HvPaMG/R2E25CwfYTQlHbb4YRoY8zNRsIEWKBe3lg4+5lrocO+xtUd7/vcvPyXj/LeKvh/5OZMhnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\VSense_API\\vsense_loginapi-main\\VSignLogin.csproj",
+  "projectFilePath": "C:\\Users\\User\\Exalca\\Projects\\VSense_API\\vsense_loginapi-main\\VSignLogin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
