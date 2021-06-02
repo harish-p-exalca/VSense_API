@@ -157,6 +157,22 @@ namespace VSense.API.Repositories
                 throw ex;
             }
         }
+        public MEdge GetMEdge(int EdgeID)
+        {
+            try
+            {
+                var Result = _dbContext.MEdges.FirstOrDefault(t => t.EdgeID == EdgeID);
+                if (Result == null)
+                {
+                    throw new Exception("Edge not found");
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<MEdge> GetOpenMEdges()
         {
             try
@@ -194,6 +210,7 @@ namespace VSense.API.Repositories
                 else
                 {
                     edge = mEdge;
+                    edge.Battery = 100;
                     edge.Status = "20";
                     edge.IsActive = true;
                     edge.CreatedOn = DateTime.Now;
@@ -413,7 +430,6 @@ namespace VSense.API.Repositories
                 foreach (var assignParam in assignParams)
                 {
                     assignParam.AssignmentID = AssignmentID;
-                    assignParam.IsActive = true;
                     assignParam.CreatedOn = DateTime.Now;
                     _dbContext.MEdgeAssignParams.Add(assignParam);
                 }
@@ -599,12 +615,70 @@ namespace VSense.API.Repositories
         }
         #endregion
         #region Log and Exception
-        public List<EdgeException> GetAllExceptions()
+        public List<LiveFeedView> GetLivFeeds()
         {
             try
             {
-                var res = _dbContext.EdgeExceptions.ToList();
-                return res;
+                var Result = new List<LiveFeedView>();
+                var Logs = _dbContext.EdgeLogs.ToList();
+                foreach (var log in Logs)
+                {
+                    var view = new LiveFeedView();
+                    view.LogID = log.LogID;
+                    view.EdgeID = log.EdgeID;
+                    view.RefID = log.RefID;
+                    view.DateTime = log.DateTime;
+                    view.PramID = log.PramID;
+                    view.Value = log.Value;
+                    view.MinValue = log.MinValue;
+                    view.MaxValue = log.MaxValue;
+                    view.AvgValue = log.AvgValue;
+                    view.Threshold = log.Threshold;
+                    var assigned = _dbContext.MEdgeAssigns.FirstOrDefault(t => t.EdgeID == log.EdgeID);
+                    if (assigned != null)
+                    {
+                        view.Site = _dbContext.MSites.Find(assigned.SiteID).Title;
+                        view.Space = _dbContext.MSpaces.Find(assigned.SpaceID).Title;
+                        view.Asset = _dbContext.MAssets.Find(assigned.AssetID).Title;
+                        view.PramTitle = _dbContext.MEdgeAssignParams.Find(assigned.AssignmentID, log.PramID).Title;
+                        Result.Add(view);
+                    }
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<ExceptionView> GetExceptions()
+        {
+            try
+            {
+                var Result = new List<ExceptionView>();
+                var Exceptions = _dbContext.EdgeExceptions.ToList();
+                foreach (var exception in Exceptions)
+                {
+                    var view = new ExceptionView();
+                    view.ExcepID = exception.ExcepID;
+                    view.Class = exception.Class;
+                    view.PramID = exception.PramID;
+                    view.DateTime = exception.CreatedOn;
+                    view.Threshold = exception.Threshold;
+                    view.AssignedTo = exception.AssignedTo;
+                    view.SLAStart = exception.SLAStart;
+                    view.Status = exception.Status;
+                    view.Value = exception.Value;
+                    var assigned = _dbContext.MEdgeAssigns.FirstOrDefault(t => t.EdgeID == exception.EdgeID);
+                    if (assigned != null)
+                    {
+                        view.Site = _dbContext.MSites.Find(assigned.SiteID).Title;
+                        view.Space = _dbContext.MSpaces.Find(assigned.SpaceID).Title;
+                        view.Asset = _dbContext.MAssets.Find(assigned.AssetID).Title;
+                        Result.Add(view);
+                    }
+                }
+                return Result;
             }
             catch (Exception ex)
             {
@@ -620,6 +694,49 @@ namespace VSense.API.Repositories
                 var res = _dbContext.EdgeLogs.Add(Log);
                 await _dbContext.SaveChangesAsync();
                 return res.Entity;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<AssignParamLogView> GetLastLogOfParams(int EdgeID)
+        {
+            try
+            {
+                var Result = new List<AssignParamLogView>();
+                var Assignment = _dbContext.MEdgeAssigns.FirstOrDefault(t => t.EdgeID == EdgeID);
+                if (Assignment == null)
+                {
+                    throw new Exception("assignment not founde");
+                }
+                var AssignParams = _dbContext.MEdgeAssignParams.Where(t => t.AssignmentID == Assignment.AssignmentID);
+                foreach (var param in AssignParams)
+                {
+                    var log = _dbContext.EdgeLogs.OrderByDescending(t=>t.LogID).FirstOrDefault(t => t.EdgeID == EdgeID && t.PramID == param.PramID);
+                    var view = new AssignParamLogView();
+                    view.PramID = param.PramID;
+                    view.Title = param.Title;
+                    view.ActivityGraphTitle = param.ActivityGraphTitle;
+                    view.Min = param.Min;
+                    view.Max = param.Max;
+                    view.Unit = param.Unit;
+                    if (log != null)
+                    {
+                        view.Value = log.Value;
+                        view.MinValue = log.MinValue;
+                        view.MaxValue = log.MaxValue;
+                        view.AvgValue = log.AvgValue;
+                        view.DateTime = log.DateTime;
+                        view.IsLogExist = true;
+                    }
+                    else
+                    {
+                        view.IsLogExist = false;
+                    }
+                    Result.Add(view);
+                }
+                return Result;
             }
             catch (Exception ex)
             {
@@ -644,6 +761,34 @@ namespace VSense.API.Repositories
                     res.Space= _dbContext.MSpaces.Find(assign.SpaceID).Title;
                     res.Status= _dbContext.MEdges.Find(assign.EdgeID).IsActive;
                     res.LastFeed = _dbContext.EdgeLogs.OrderByDescending(t => t.LogID).FirstOrDefault(t => t.EdgeID == assign.EdgeID)?.DateTime;
+                    Result.Add(res);
+                }
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<ControlCenterFeed> GetControlCenterFeed()
+        {
+            try
+            {
+                var Result = new List<ControlCenterFeed>();
+                var AssignParams = (from tb1 in _dbContext.MEdgeAssigns join
+                                    tb2 in _dbContext.MEdgeAssignParams on tb1.AssignmentID equals tb2.AssignmentID
+                                    select new {tb1,tb2}).ToList();
+                foreach (var assignParam in AssignParams)
+                {
+                    var res = new ControlCenterFeed();
+                    res.Asset = _dbContext.MAssets.Find(assignParam.tb1.AssetID).Title;
+                    res.Site = _dbContext.MSites.Find(assignParam.tb1.SiteID).Title;
+                    res.Space = _dbContext.MSpaces.Find(assignParam.tb1.SpaceID).Title;
+                    res.Title = assignParam.tb2.Title;
+                    res.Status = assignParam.tb2.IsActive;
+                    var log = _dbContext.EdgeLogs.OrderByDescending(t => t.LogID).FirstOrDefault(t => t.EdgeID == assignParam.tb1.EdgeID && t.PramID == assignParam.tb2.PramID);
+                    res.LastFeed = log?.DateTime;
+                    res.Value = log?.Value;
                     Result.Add(res);
                 }
                 return Result;

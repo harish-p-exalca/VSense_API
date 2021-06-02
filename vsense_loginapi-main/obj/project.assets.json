@@ -6857,11 +6857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\VSense_API\\vsense_loginapi-main\\VSignLogin.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Exalca\\Projects\\VSense_API\\vsense_loginapi-main\\VSignLogin.csproj",
       "projectName": "VSignLogin",
-      "projectPath": "C:\\Users\\User\\VSense_API\\vsense_loginapi-main\\VSignLogin.csproj",
+      "projectPath": "C:\\Users\\User\\Exalca\\Projects\\VSense_API\\vsense_loginapi-main\\VSignLogin.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\VSense_API\\vsense_loginapi-main\\obj\\",
+      "outputPath": "C:\\Users\\User\\Exalca\\Projects\\VSense_API\\vsense_loginapi-main\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

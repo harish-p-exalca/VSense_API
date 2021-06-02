@@ -16,6 +16,7 @@ namespace VSense.API.Repositories
         Task<MSpace> CreateMSpace(MSpace mSpace);
         Task DeleteMSpace(int ID);
         List<MEdge> GetMEdges();
+        MEdge GetMEdge(int EdgeID);
         List<MEdge> GetOpenMEdges();
         Task<MEdge> CreateMEdge(MEdge mSpace);
         Task DeleteMEdge(int ID);
@@ -30,13 +31,16 @@ namespace VSense.API.Repositories
         Task DeleteRule(int ID);
         #endregion
         #region Log and Exception
-        List<EdgeException> GetAllExceptions();
         Task<EdgeLog> CreateEdgeLog(EdgeLog Log);
+        List<AssignParamLogView> GetLastLogOfParams(int EdgeID);
         #endregion
         #region Monitor
         List<MonitorTableView> GetMonitorTable();
+        List<ControlCenterFeed> GetControlCenterFeed();
         Task ToggleDeviceStatus(int EdgeID);
         List<EdgeStatusChartData> GetEdgeStatusChartData();
+        List<LiveFeedView> GetLivFeeds();
+        List<ExceptionView> GetExceptions();
         #endregion
     }
 }
