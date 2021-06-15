@@ -129,6 +129,7 @@ namespace VSense.API.Models
     {
         [Key]
         public int RuleID { get; set; }
+        public string Title { get; set; }
         public int SiteID { get; set; }
         public int? SpaceID { get; set; }
         public int? AssetID { get; set; }
