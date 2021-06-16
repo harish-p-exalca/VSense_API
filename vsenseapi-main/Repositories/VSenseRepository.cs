@@ -815,7 +815,7 @@ namespace VSense.API.Repositories
         {
             try
             {
-                var Logs= _dbContext.EdgeLogs.ToLookup(t => t.DateTime.Date);
+                var Logs= _dbContext.EdgeLogs.OrderBy(t=>t.DateTime).ToLookup(t => t.DateTime.Date);
                 var Result = new List<EdgeStatusChartData>();
                 foreach (var log in Logs)
                 {
