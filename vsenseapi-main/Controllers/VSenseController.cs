@@ -422,6 +422,7 @@ namespace VSense.API.Controllers
                 return null;
             }
         }
+        [HttpPost]
         public async Task<IActionResult> CreateEdgeLog(EdgeLog log)
         {
             try
