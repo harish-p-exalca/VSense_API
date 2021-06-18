@@ -689,11 +689,26 @@ namespace VSense.API.Repositories
         {
             try
             {
-                Log.IsActive = true;
-                Log.CreatedOn = DateTime.Now;
-                var res = _dbContext.EdgeLogs.Add(Log);
-                await _dbContext.SaveChangesAsync();
-                return res.Entity;
+                var assignment = _dbContext.MEdgeAssigns.FirstOrDefault(t => t.EdgeID == Log.EdgeID);
+                if (assignment != null)
+                {
+                    var assignParam = _dbContext.MEdgeAssignParams.FirstOrDefault(t => t.AssignmentID == assignment.AssignmentID && t.PramID == Log.PramID);
+                    if (assignParam != null)
+                    {
+                        Log.DateTime = DateTime.Now;
+                        var res = _dbContext.EdgeLogs.Add(Log);
+                        await _dbContext.SaveChangesAsync();
+                        return res.Entity;
+                    }
+                    else
+                    {
+                        throw new Exception("Parameter neither active nor assigned. Please contact admin.");
+                    }
+                }
+                else
+                {
+                    throw new Exception("Device not assigned. Please contact admin.");
+                }
             }
             catch (Exception ex)
             {

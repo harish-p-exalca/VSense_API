@@ -145,7 +145,7 @@ namespace VSense.API.Models
     #endregion
     #region Log
     [Table("T_Edge_Log")]
-    public class EdgeLog : CommonClass
+    public class EdgeLog
     {
         [Key]
         public int LogID { get; set; }
