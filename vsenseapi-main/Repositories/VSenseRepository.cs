@@ -620,7 +620,7 @@ namespace VSense.API.Repositories
             try
             {
                 var Result = new List<LiveFeedView>();
-                var Logs = _dbContext.EdgeLogs.ToList();
+                var Logs = _dbContext.EdgeLogs.OrderByDescending(t=>t.LogID).ToList();
                 foreach (var log in Logs)
                 {
                     var view = new LiveFeedView();
@@ -687,28 +687,73 @@ namespace VSense.API.Repositories
         }
         public async Task<EdgeLog> CreateEdgeLog(EdgeLog Log)
         {
-            try
+            var Result = new EdgeLog();
+            var strategy = _dbContext.Database.CreateExecutionStrategy();
+            await strategy.ExecuteAsync(async () =>
             {
-                var assignment = _dbContext.MEdgeAssigns.FirstOrDefault(t => t.EdgeID == Log.EdgeID);
-                if (assignment != null)
+                using var transaction = _dbContext.Database.BeginTransaction();
+                try
                 {
-                    var assignParam = _dbContext.MEdgeAssignParams.FirstOrDefault(t => t.AssignmentID == assignment.AssignmentID && t.PramID == Log.PramID);
-                    if (assignParam != null)
+                    var assignment = _dbContext.MEdgeAssigns.FirstOrDefault(t => t.EdgeID == Log.EdgeID);
+                    var device = _dbContext.MEdges.FirstOrDefault(t => t.EdgeID == Log.EdgeID);
+                    if (assignment != null)
                     {
-                        Log.DateTime = DateTime.Now;
-                        var res = _dbContext.EdgeLogs.Add(Log);
-                        await _dbContext.SaveChangesAsync();
-                        return res.Entity;
+                        if(device==null || !device.IsActive) { throw new Exception("Device is disabled"); }
+                        var assignParam = _dbContext.MEdgeAssignParams.FirstOrDefault(t => t.AssignmentID == assignment.AssignmentID && t.PramID == Log.PramID);
+                        if (assignParam != null && assignParam.IsActive)
+                        {
+                            Log.DateTime = DateTime.Now;
+                            var res = _dbContext.EdgeLogs.Add(Log);
+                            await _dbContext.SaveChangesAsync();
+                            Result= res.Entity;
+                            if(Log.MinValue< assignParam.Min)
+                            {
+                                await CreateException(Log);
+                            }
+                            else if (Log.MaxValue > assignParam.Max)
+                            {
+                                await CreateException(Log);
+                            }
+                        }
+                        else
+                        {
+                            throw new Exception("Parameter neither active nor assigned. Please contact admin.");
+                        }
                     }
                     else
                     {
-                        throw new Exception("Parameter neither active nor assigned. Please contact admin.");
+                        throw new Exception("Device not assigned. Please contact admin.");
                     }
+                    transaction.Commit();
+                    transaction.Dispose();
+                    return Result;
                 }
-                else
+                catch (Exception ex)
                 {
-                    throw new Exception("Device not assigned. Please contact admin.");
+                    transaction.Rollback();
+                    transaction.Dispose();
+                    throw ex;
                 }
+            });
+            return Result;
+        }
+        public async Task CreateException(EdgeLog log)
+        {
+            try
+            {
+                var Excep = new EdgeException();
+                Excep.EdgeID = log.EdgeID;
+                Excep.PramID = log.PramID;
+                Excep.Value = log.Value;
+                Excep.Threshold = log.Threshold;
+                Excep.AssignedTo = "Harish";
+                Excep.SLAStart = DateTime.Now;
+                Excep.Class = "Test";
+                Excep.Status = "Assigned";
+                Excep.IsActive = true;
+                Excep.CreatedOn = DateTime.Now;
+                _dbContext.EdgeExceptions.Add(Excep);
+                await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {

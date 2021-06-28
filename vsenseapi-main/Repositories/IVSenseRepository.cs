@@ -32,6 +32,7 @@ namespace VSense.API.Repositories
         #endregion
         #region Log and Exception
         Task<EdgeLog> CreateEdgeLog(EdgeLog Log);
+        Task CreateException(EdgeLog log);
         List<AssignParamLogView> GetLastLogOfParams(int EdgeID);
         #endregion
         #region Monitor
